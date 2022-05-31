@@ -1,0 +1,158 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <!DOCTYPE html>
+<html>
+<title>이화여자대학교 수강신청</title>
+  <head>
+    <title>(N4)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" id="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta HTTP-EQUIV="Expires" CONTENT="0">
+    <meta HTTP-EQUIV=Pragma CONTENT=no-cache>
+    <style>.font_red { color: #cc0000; font-weight: bold; }
+      .login_right h2 {font-size:22px; padding:0 0 14px 0; border-bottom:1px solid #e1e8ef; color:#2e2d2c; text-align:center; font-family:'hufs_L'; font-weight:bold }
+      .season_service_in p span {display:block;font-weight:normal;font-size: 15px;}</style>
+
+  </head>
+  <body onContextmenu="return false" style="background-color:#e6e7e4" onKeyDown="keypressed()">
+    <!-- div login_page -->
+    <div class="login_page">
+      <!-- div login_top -->
+      <div class="login_top">
+        <h1>
+          <a href="http://www.ewhatest.ac.kr" target="_blank">
+            <img src="C:/이화로고.jpg" alt="종합정보시스템">
+          </a>
+        </h1>
+
+      </div>
+
+      <form name="form1" method="post">
+        <!-- div login_wrap -->
+        <div class="login_wrap">
+          <!-- div -->
+          <div>
+            <!-- 수강신청/변경 일정 -->
+            <div class="season_service" style="height:320px">
+              <h2></h2>
+              <div class="season_service_in">
+                <p>
+                  <span>: 10:00 ~
+                    <font class="font_red">16:00</font>
+                  </span>
+                </p>
+                <div class="table">
+                  <table>
+                    <caption>,</caption>
+
+                    <tbody>
+                      <tr>
+                        <th>(전학년)</th>
+                        <td align="left">2.10(월) ~ 2.14(금)</td>
+                      </tr>
+                    </tbody>
+
+                    <tbody>
+                    <tr>
+                    <th>수강변경(전학년)</th>
+                    <td align="left">3.2(월) ~ 3.6(금)</td>
+                    </tr>
+                    </tbody>
+
+
+                    <tbody>
+                    <tr>
+                    <th>4학년</th>
+                    <td align="left">02.10(월)</td>
+                    </tr>
+                    <tr>
+                    <th>3학년</th>
+                    <td align="left">02.11(화)</td>
+                    </tr>
+                    <tr>
+                    <th>2학년</th>
+                    <td align="left">02.12(수)</td>
+                    </tr>
+                    <tr>
+                    <th>1학년</th>
+                    <td align="left">02.13(목)</td>
+                    </tr>
+                    <tr>
+                    <th>전학년</th>
+                    <td align="left">02.14(금)</td>
+                    </tr>
+                    </tbody>
+
+                  </table>
+                </div>
+                <BR/>
+                <! <p><span>※ 학부수강신청 추가일정 ※<br>전학년 <font class="font_red">02.17(월)</font><br>[이용시간:10:00~<font class="font_red">16:00</font>] </span></p> >
+              </div>
+            </div>
+            < /수강신청/변경 일정 >
+            <!-- div login_right -->
+            <div class="login_right">
+			
+<script>
+	  function goSubmit() {
+        if ( !checkInput() )  return;
+	  <!-- document.form1.password.value = SHA2('document.form1.password.value',512)); -->
+        document.form1.method="post";
+		document.form1.action="view.php";
+		document.form1.submit();
+      }
+      function checkInput() {
+        if(!document.form1.user_id.value) {
+          alert("ID(학번)를 입력하세요!");
+          document.form1.user_id.focus();
+          return false;
+        } else if(!document.form1.password.value) {
+          alert("PASSWORD(비밀번호)를 입력하세요!");
+          document.form1.password.focus();
+          return false;
+        }
+        return true;
+      }
+	  
+</script>
+
+              <h2>이화여자대학교 2020-1학기 학부 수강신청</h2>
+              <div class="login_compo">
+                <p>
+                  <input type="text" class="input_login" name="user_id" size="19.5" 
+				  style="width:206px" placeholder="ID(학번)">
+                </p>
+                <p>
+                  <input type="password" class="input_login" name="password" size="20"
+				  id="password" style="width:206px; margin:7px 0 12px 0;"  placeholder="PASSWORD(비밀번호)">
+                </p>
+                <p>
+				
+                  <a href="#" onClick=" goSubmit();">LOGIN</a>
+ 
+                </p>
+              </div>
+              <div class="box_blue">
+                <p>
+                  <strong>-
+                    <br/>
+                    &nbsp;&nbsp;강의 수강을 지양하기 바람.</strong>
+                </p>
+                <p>
+                  <strong>[로그아웃(Logout)]을 클릭하십시오.
+                    <br/>
+                    &nbsp;&nbsp;(실습실/PC방 등 공용 PC 사용시 특히 주의요함!!)</strong>
+                </p>
+              </div>
+            </div>
+            <!-- /div login_right -->
+          </div>
+          <!-- /div -->
+        </div>
+        <!-- /div login_wrap -->
+      </form>
+      <!-- /form -->
+    </div>
+
+        <!-- /유의사항 -->
+  </body>
+</html>
